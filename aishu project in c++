@@ -1,0 +1,49 @@
+#include<iostream>
+using namespace std;
+int main()
+{
+    string location,reporttype;
+    cout<<"                WEATHER APP                         \n";
+    /*Name:T.Aishwarya
+    College name:Vivekanandha College of ENgineering for Women
+    datas used:Location,reporttype
+    Methods used:if else statement
+    */
+    cout << "Enter the location:";
+    cin>>loc;
+    cout << "Do you want the weather for a day or for the three days?(Enter'day'or'for three days'): ";
+    cin>>reporttype;
+    cout << "The " << reporttype <<" report for "<< loc << " is:\n";
+    if (reporttype=="day") 
+    {
+        int date;
+        cout<<"enter date:\n";
+        cin>>date;
+        cout << "Weather: Sunny\n";
+        cout<<"TEMPERATURE:\n";
+        cout << "High: 88°F\n";
+        cout << "Low: 55°F\n";
+    } 
+    else if (reporttype=="week") 
+    {
+        cout << "Date:11.07.2023,tuesday\n";
+        cout << "Climate:cloudy\n";
+        cout << "High: 75°F\n";
+        cout << "Low: 55°F\n";
+        cout << "\n";
+        cout << "Date:12.07.2023,wednesday\n";
+        cout << "Climate: rainy\n";
+        cout << "High: 70°F\n";
+        cout << "Low: 52°F\n";
+        cout << "Date:13.07.2023,thursday\n";
+        cout << "Climate: sunny\n";
+        cout << "High: 62°F\n";
+        cout << "Low: 49°F\n";
+    }
+    else
+    {
+        cout << "Invalid report type entered\n";
+    }
+
+    return 0;
+}
